@@ -1,0 +1,65 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : pKeyboardAPI
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x1c80c2fc001b4b91
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  type_code : 31
+  p_codes :
+   -
+     code : |1-
+      
+     type : 720896
+  procedures :
+   -
+     name : RegisterHotKey
+     procedure_id : 2053856281528430758
+     type_code : 15
+     code : |1-
+      // Summary: Adds a global shortcut key to the system
+      // Parameters:
+      //	nHWnd (system int): Handle of the window that will receive the global shortcut message
+      //	nID (integer): Identifier of the shortcut
+      //	nModifier (int): Modification keys to include in the shortcut (MOD_xxx constants)
+      //	nVK (int): Virtual shortcut key (VK_xxx constants)
+      // Return value:
+      // 	boolean: false if an error occurred
+      //
+      Procedure RegisterHotKey( nHWnd is system int , nId is int , nModify is int , nVK is int )
+      
+      RESULT API(USERDLL,"RegisterHotKey",nHWnd,nId,nModify,nVK)
+     type : 458752
+   -
+     name : UnregisterHotKey
+     procedure_id : 2053869960999767386
+     type_code : 15
+     code : |1-
+      // Summary: cancel a global shortcut key saved by RegisterHotKey
+      // Parameters:
+      //	nHWnd (system int): Handle of the window that receives the global shortcut message
+      //	nID (integer): Identifier of the shortcut
+      // Return value:
+      // 	variant: // 	None
+      //
+      Procedure UnregisterHotKey( nHWnd is system int , nId is int )
+      
+      RESULT API(USERDLL,"UnregisterHotKey",nHWnd,nId)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_ProcéduresGlobales1
+resources :
+ string_res :
+  identifier : 0x1006a11232035b94
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

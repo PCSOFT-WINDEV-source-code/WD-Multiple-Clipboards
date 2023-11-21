@@ -1,0 +1,227 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : pAPI
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x1c80c32a0028ffbe
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  type_code : 31
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAAC0NLcHroJA1RWvUEu4d9trhXA4vkKx5FMoClXO6cYuoZvD763H+IjE0baQPeqVjwqoFBtxp9mWCibdf1E9Z25SvnEY1/tu83nc3f/65pkRVeLQK67OSibYyuU+c1e0sOVU7VwH13DE5xLFH955zRn7Rt+B3ZF8/H/yTogoJSK5FZMqJBf9VR6IHQXb1T/hJzJZG1Kck8F0IS2hMfNBj1YQf0a1RLbWNgxqUpRhxT1bve8UbRZwY22xwwEerPeCmxElOil4yoU9gfLpDUXjXiIoaV78i9qI095FTM/heCjuBODZJbSK2RCUx6CswFEtMoPgv1hA7oXDlMB536k6OAGwTR5WZ+7oOgB2cVt6OPMxBgmGzmW6Ocp7R8v0D0Xtlv8mKhA2SKq+ylSSEnhiLAvx4QEpp+oCoVAP3HaRM4iXhe0fPLGT3jKTdbKw8Lck0iTV26y/LqLwP4moq8HCkwRX7xOc3nYaKg82R9jS95OIrQvXoza2zjlPhr0SD4KKYFKTXT8lnx1xbbRCrcLMBbs15uQZBh0XL3ZbADcytqoOfJ9ENCZjsoN481te3e8dNt/YhE+gTgpxt13qalNm0mG4lv929zrhjA2h3LbXWqO9vGhIsxuBVvhZ3BFSD7ZP/IMUX9Wj3+/oABH5PCesRq6V4+acZJenPy5OpoSjHwHT2iEBe8PNfKiQB4h8MZK+VPLt026OaVGU8RQKj6sCpgcnR+pb5hA3IPRtz2K8Oc6rJ7x4m43+37wcjeTywzwmCpWBeUAcpgA9BxHeax7o62iAkvIDhNxXvdyXG+8HRORKBFx4OEJ6fgx4PZAv0L5MvUJTqLTpGpFKaisK3uJVGXZBWpGiE8C99R6fWsl0kYHMJ42oICBJJlfysLJA/hTp2VwAk1o+vLQCjEvyvSn/R4f8W0j2CiVQr0+mfei5y6E6BnCjCZtEe1GKedNWM6GYCExiwboCeHYxUyNWXPHnGjQo08Vqj7Cmteo+rp/pjS6WQZA=
+     code : |1+
+      CONSTANT
+      	// Names of the DLLs of the system
+      	USERDLL = "user32.dll"
+      	KERNELDLL = "kernel32.dll"
+      	
+      	// Windows standard messages
+      	WM_CHANGECBCHAIN = 0x030D
+      	WM_DRAWCLIPBOARD = 0x0308
+      	WM_HOTKEY = 0x0312
+      	WM_PASTE = 0x0302
+      	WM_KEYDOWN = 0x0100
+      	WM_KEYUP = 0x0101
+      	WM_LBUTTONDBLCLK = 515
+      	
+      	
+      	// Key modifiers
+      	MOD_ALT = 0x0001
+      	MOD_CONTROL = 0x0002
+      	TPL_NOREPEAT = 0x4000
+      	MOD_SHIFT = 0x0004
+      	MOD_WIN = 0x0008
+      	
+      	// GlobalAlloc flags
+      	GHND = 0x0042				// GMEM_MOVEABLE + GMEM_ZEROINIT
+      	GMEM_FIXED = 	0x0000			// Static memory, the result is a pointer
+      	GMEM_MOVEABLE = 	0x0002		// Dynamic memory (heap-based), the result is a handle
+      	GMEM_ZEROINIT = 0x0040		// Memory initialized to zero
+      	GPTR = 0x0040				// GMEM_FIXED + GMEM_ZEROINIT
+      	
+      	// Virtual keys
+      	VK_LBUTTON = 0x01 // Left mouse button
+      	VK_RBUTTON = 0x02 // Right mouse button
+      	VK_CANCEL = 0x03 // Control-break processing
+      	VK_MBUTTON = 0x04 // Middle mouse button (three-button mouse)
+      	VK_XBUTTON1= 0x05 // X1 mouse button
+      	VK_XBUTTON2 = 0x06 // X2 mouse button
+      	VK_BACK = 0x08 // BACKSPACE key
+      	VK_TAB = 0x09 // TAB key
+      	VK_CLEAR = 0x0C // CLEAR key
+      	VK_RETURN = 0x0D // ENTER key
+      	VK_SHIFT = 0x10 // SHIFT key
+      	VK_CONTROL = 0x11 // CTRL key
+      	VK_MENU = 0x12 // ALT key
+      	VK_PAUSE = 0x13 // PAUSE key
+      	VK_CAPITAL = 0x14 // CAPS LOCK key
+      	VK_ESCAPE = 0x1B // ESC key
+      	VK_SPACE = 0x20 // SPACEBAR
+      	VK_PRIOR = 0x21 // PAGE UP key
+      	VK_NEXT = 0x22 // PAGE DOWN key
+      	VK_END = 0x23 // END key
+      	VK_HOME = 0x24 // HOME key
+      	VK_LEFT = 0x25 // LEFT ARROW key
+      	VK_UP = 0x26 // UP ARROW key
+      	VK_RIGHT = 0x27 // RIGHT ARROW key
+      	VK_DOWN = 0x28 // DOWN ARROW key
+      	VK_SELECT = 0x29 // SELECT key
+      	VK_PRINT = 0x2A // PRINT key
+      	VK_EXECUTE = 0x2B // EXECUTE key
+      	VK_SNAPSHOT = 0x2C // PRINT SCREEN key
+      	VK_INSERT = 0x2D // INS key
+      	VK_DELETE = 0x2E // DEL key
+      	VK_HELP = 0x2F // HELP key
+      	VK_0 = 0x30 
+      	VK_1 = 0x31
+      	VK_2 = 0x32
+      	VK_3 = 0x33
+      	VK_4 = 0x34
+      	VK_5 = 0x35
+      	VK_6 = 0x36
+      	VK_7 = 0x37
+      	VK_8 = 0x38
+      	VK_9 = 0x39
+      	VK_A = 0x41
+      	VK_B = 0x42
+      	VK_C = 0x43
+      	VK_D = 0x44
+      	VK_E = 0x45
+      	VK_F = 0x46
+      	VK_G = 0x47
+      	VK_H = 0x48
+      	VK_I = 0x49
+      	VK_J = 0x4A
+      	VK_K = 0x4B
+      	VK_L = 0x4C
+      	VK_M = 0x4D
+      	VK_N = 0x4E
+      	VK_O = 0x4F
+      	VK_P = 0x50
+      	VK_Q = 0x51
+      	VK_R = 0x52
+      	VK_S = 0x53
+      	VK_T = 0x54
+      	VK_U = 0x55
+      	VK_V = 0x56
+      	VK_W = 0x57
+      	VK_X = 0x58
+      	VK_Y = 0x59
+      	VK_Z = 0x5A
+      	VK_LWIN = 0x5B // Left Windows key (Natural keyboard)
+      	VK_RWIN = 0x5C // Right Windows key (Natural keyboard)
+      	VK_APPS = 0x5D // Applications key (Natural keyboard)
+      	VK_SLEEP = 0x5F // Computer Sleep key
+      	VK_NUMPAD0 = 0x60 // Numeric keypad 0 key
+      	VK_NUMPAD1 = 0x61 // Numeric keypad 1 key
+      	VK_NUMPAD2 = 0x62 // Numeric keypad 2 key
+      	VK_NUMPAD3 = 0x63 // Numeric keypad 3 key
+      	VK_NUMPAD4 = 0x64 // Numeric keypad 4 key
+      	VK_NUMPAD5 = 0x65 // Numeric keypad 5 key
+      	VK_NUMPAD6 = 0x66 // Numeric keypad 6 key
+      	VK_NUMPAD7 = 0x67 // Numeric keypad 7 key
+      	VK_NUMPAD8 = 0x68 // Numeric keypad 8 key
+      	VK_NUMPAD9 = 0x69 // Numeric keypad 9 key
+      	VK_MULTIPLY = 0x6A // Multiply key
+      	VK_ADD = 0x6B // Add key
+      	VK_SEPARATOR = 0x6C // Separator key
+      	VK_SUBTRACT = 0x6D // Subtract key
+      	VK_DECIMAL = 0x6E // Decimal key
+      	VK_DIVIDE = 0x6F // Divide key
+      	VK_F1 = 0x70
+      	VK_F2 = 0x71
+      	VK_F3 = 0x72
+      	VK_F4 = 0x73
+      	VK_F5 = 0x74
+      	VK_F6 = 0x75
+      	VK_F7 = 0x76
+      	VK_F8 = 0x77
+      	VK_F9 = 0x78
+      	VK_F10 = 0x79
+      	VK_F11 = 0x7A
+      	VK_F12 = 0x7B
+      	VK_F13 = 0x7C
+      	VK_F14 = 0x7D
+      	VK_F15 = 0x7E
+      	VK_F16 = 0x7F
+      	VK_F17 = 0x80
+      	VK_F18 = 0x81
+      	VK_F19 = 0x82
+      	VK_F20 = 0x83
+      	VK_F21 = 0x84
+      	VK_F22 = 0x85
+      	VK_F23 = 0x86
+      	VK_F24 = 0x87
+      	VK_NUMLOCK = 0x90 // NUM LOCK key
+      	VK_SCROLL = 0x91 // SCROLL LOCK key
+      	VK_LSHIFT = 0xA0 // Left SHIFT key
+      	VK_RSHIFT = 0xA1 // Right SHIFT key
+      	VK_LCONTROL = 0xA2 // Left CONTROL key
+      	VK_RCONTROL = 0xA3 // Right CONTROL key
+      	VK_LMENU = 0xA4 // Left MENU key
+      	VK_RMENU = 0xA5 // Right MENU key
+      	VK_BROWSER_BACK = 0xA6 // Browser Back key
+      	VK_BROWSER_FORWARD = 0xA7 // Browser Forward key
+      	VK_BROWSER_REFRESH = 0xA8 // Browser Refresh key
+      	VK_BROWSER_STOP = 0xA9 // Browser Stop key
+      	VK_BROWSER_SEARCH = 0xAA // Browser Search key
+      	VK_BROWSER_FAVORITES = 0xAB // Browser Favorites key
+      	VK_BROWSER_HOME = 0xAC // Browser Start and Home key
+      	VK_VOLUME_MUTE = 0xAD // Volume Mute key
+      	VK_VOLUME_DOWN = 0xAE // Volume Down key
+      	VK_VOLUME_UP = 0xAF // Volume Up key
+      	VK_MEDIA_NEXT_TRACK = 0xB0 // Next Track key
+      	VK_MEDIA_PREV_TRACK = 0xB1 // Previous Track key
+      	VK_MEDIA_STOP = 0xB2 // Stop Media key
+      	VK_MEDIA_PLAY_PAUSE = 0xB3 // Play/Pause Media key
+      	VK_LAUNCH_MAIL = 0xB4 // Start Mail key
+      	VK_LAUNCH_MEDIA_SELECT = 0xB5 // Select Media key
+      	VK_LAUNCH_APP1 = 0xB6 // Start Application 1 key
+      	VK_LAUNCH_APP2 = 0xB7 // Start Application 2 key
+      	VK_ATTN = 0xF6 // Attn key
+      	VK_CRSEL = 0xF7 // CrSel key
+      	VK_EXSEL = 0xF8 // ExSel key
+      	VK_EREOF =0xF9 // Erase EOF key
+      	VK_PLAY = 0xFA // Play key
+      	VK_ZOOM = 0xFB // Zoom key
+      END
+      
+      STRECT is Structure
+      	nLeft is 4-byte int
+      	nTop is 4-byte int
+      	nRight is 4-byte int
+      	nBottom is 4-byte int
+      END
+      
+      GUITHREADINFO is Structure
+      	nCbSize is 4-byte int
+      	nFlags is 4-byte int
+      	nHwndActive is system int
+      	nHwndFocus is system int
+      	nHwndCapture is system int
+      	nHwndMenuOwner is system int
+      	nHwndMoveSize is system int
+      	nHwndCaret is system int
+      	rcCaret is STRECT
+      END
+      
+      STPOINT is Structure
+      	x is 4-byte int
+      	y is 4-byte int
+      END
+     type : 720896
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_ProcéduresGlobales1
+resources :
+ string_res :
+  identifier : 0x1006a11231f95b94
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

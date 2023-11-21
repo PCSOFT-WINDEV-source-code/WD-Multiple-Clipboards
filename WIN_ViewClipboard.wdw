@@ -1,0 +1,916 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WIN_ViewClipboard
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : WIN_ViewClipboard
+ identifier : 0x22ce5d4704837e9b
+ internal_properties : CAAAAAgAAACwsYjIf/lnsMObj2A6VEsTWTnxWDnwQQFT7uJDQDRxFqOe9s5/RFDtWl4Cmg5Av8vI5h0n88LUN4RdGpZq2Az1NvY05QTMi5ejEtAhfk4k4ANPgmrMn43uO7+kxcWndZxBuJGpo+S3oKqA7BSAd2YcDCTM/vJSS5zeVUBdm7Tu+Tc3fVd+Uj4yq7o6g9XwyPvanK88iCQ+y+WeKJsXuu4e8bFsxC4MNg4yQBBTtkrOMIiv14xH5I0ai+VWT7yMbo+4/QoHLZmowMO4qS6VRi6rCnT8lzDvFsLzftRBcM8sev9wLtnFv2wZ3vjbMa+upRi3VefZW0huNutcq2dfqERO3GNux35mkoDx/QCHjksEa5kVM5moL1XhlmzP/lbIv3KcXI2bwpQEBAaYH0LoIoPgSZdUEwJpU3dvtXYTRwQQFwch/hyDYGMRKxdlRhnPH91VXspkFgDXA361CVQKhhi37yCIM4noSiwvDMgkwawkduq2aj5izDUWoNorVB9zrwTivMdxeAua35auteCHDbnxzxVVsqkKFiDSOhH5OHIKqeydCjojifcRAO4bEwFEZI6Yke5qzwqwU/FlhHRhAXxCkAbxQoPlfIvJDZVNcbebWAw26K1WhORnO3bB/+UNfQpwjOm7xKP2+Vlzql9HZRU4HFNZS1zWRYh9Mx+I2SXL18KwMA2hPpHaB3u9Ycwms/KjTTCtOjuoVyIkr7HG240g7NIB0Bfgywe9Nud6Nn611ArlsISOL8Fv/B4Nd75+Jp8CcGveldxPkzzUMPLuAq/L5OgvM77myc6v1U2+w7w+LYZ/8Zf883L6VXKFjtEdpw==
+ properties :
+  width : 486
+  height : 599
+  widthClient : 484
+  heightClient : 567
+ controls :
+  -
+    name : TABLE_ViewClipboard
+    identifier : 0x22ce5d4704887e9b
+    internal_properties : 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
+    properties :
+     x : 6
+     y : 37
+     width : 469
+     height : 434
+    columns :
+     -
+       name : COL_Clipboard
+       identifier : 0x22ce5d4704897e9b
+       internal_properties : CAAAAAgAAACLeXFuaSyj1aBlOEmT4ZR8o0LSmc2buibT3Rei33sjG+iuaQavKaVEGkBvFIr0EM3GtJncGTeOrQ9UkuQhQpQo260s4Q4fQWDuZjPkCW0Ocp3tLDAnH2LSxKMayV3r2urtZJRydl1LLcBBRwxsmquLsI8CtahWRMApofpW95gso5xllSkp4XErxnl5UT5MOIjhgqY4gXSR1Ljm99sTSpb7wu/QWu2xYnK1tPkl7wgmWf/UeA==
+       type : 40
+       content :
+        internal_properties : CAAAAAgAAADf0H1vm4GIcPOa8WzY2kDKjIXCXpg2DGfytJL7UUydzuU0hhsxMONiwxmbZ3Nn2hsrycOqFFlKF1QROy6ogaPuEdrgj8UGSYvpQVS37fqCGQAwcMh4zDgbI3iUX2EDjVaPAt9De1ZHnD2OPB79NYUWRFaZfpJPJMBgHC+P3Os3uY93YLu7XsjDMlLxpMIzibx/AlIqsp6QfWHrM2tB07h/6q2UXwik1XsFYbFqNRqAF/s8DUXOzjoqt9w2XSLtpS67GV4mLpBYQU+N9rGHe1MeW7tL6evkru9z3gB8Or9YuiX3yn5MODGhj3G+NakUnN3hF4dx7wmoFrkTvNCsOVk3IiT305BGaR1T0mC8Ro295JXwLseZtKsJ9PRBfQRCCrEikj1b0BC+H7zWhbXj820TOnsYTuBfGPBA9LfsUEWMnNAN6w+4VFEfAxpGppvc9Ff9/IiYzsz4eIx0UBj3nq16FkXHOH5etyjSdXRiJr1hwNIS1Zd8L04qPZKZy8lXRqGE9IAwcSAXJK59hPo4EGWoI24SNZsICMTGJWp8qiu1bE5bjpTJQ2bEdAfA6BG2gnCovUlvwJs=
+        properties : {}
+        controls :
+         -
+           name : STC_Preview
+           identifier : 0x22ce5d47048a7e9b
+           internal_properties : CAAAAAgAAAAE2L2mJrUlAWAsQQ2XhkbYna099Eea6rk+/9CNWAbR2lKTPLyqYLygyjOSF5qSIOYNmXgYyHaYyzwZYEDm3mtjqJ6DUrJbUdczgzZToFPFgrYASyxlVmxwG3COaHqUCy84g/zXzLxet8B6n34JS2v17GBUdNohb6X1MDCb1/p+8cismh7I0vMrN1N94Soz/M731rhL/Zin+n1lShms7aybxpESddDI0oANubJ5X+5JWp8M9ZGkb72m9pBpmzh4lzN6bqlKTzffOeWXg8gNoyKg0ScFS3ooNP0PdB4FGFnFCjurP+PchIbqPvirk+IpPqwlmwm6mQcRdk2htCWbZXfXYzjvMYX0lBuQsgErosa+Qq0KD1M4p7WDSypVwEbdX6JRX2NwWKQ5uHMjuPX8ZFM9nV1EjPork3WUdsXagkMzFjcBl7DdKHSQyDba9RURXO4NuxJ/mJ8iRiw=
+           properties :
+            x : 3
+            y : 3
+            width : 402
+            height : 61
+           type : 3
+           code_elements :
+            type_code : 2
+            p_codes : []
+         -
+           name : IMG_Preview
+           identifier : 0x22ce5d47048b7e9b
+           internal_properties : CAAAAAgAAAD8uovsnbEQqdr9esbRJaiVn00WHL2+a5H0UMaT2rmsD24t5c4rw6IQ5aL+NqNPvAIIXvTfEK0CCG758XsaB/Suaooa+87c+xjM5GtgcYZjkIYtXub9OM3vt+t0FjJSJpO6VCX41ArTTiQSx0Wzi5p6X6GNWYeK89XVhfzEaOoa4xmpHiCOPd52dI3zErTP6j/kkFnjiSgJKXjB07zF/N7GUOiahIiHson2Kxu4bjeY+t0nQUn69ohsjI3uOGC4DWIkydp3KwVlCN5j4u0nGFjzHZ8m5CMFMbRCXgft22xRobkyw1tM4qaB2zNMyMmE6OwU1cFVB0O7h7aJpxRxhjec4ul4UgXY3X/qD3ScsNaS088+4sgrrwnNVf0mwstgD0kKZZCLgS+FctlH1/GeNPHLYTw0TkBSmEPHKhBlWo2Z0j5cuLyWAjhueCkWUQAyHIahA1LbqB8A/4t4S9X6bKjEpUvbhy7OlBmMHrXaN6N7crrHI39+lE4VL4qicHP2KTgzYjSZ1T/Go4feP1RKtmP3rudDha4GmcG5rAcPsaUf5D2E/pTYqA+SSKtjqABF9AD1gCRAE+mGuXLUZsfwEDUvvyrS0aUrxHV+koP+v2JLSIsGyiMXe3eZjXT7aHa8vCNg1/Ergjpcg0dhaaNMbzoUSxrDF4DrxGITLda8DoGxZGtNNu+LjIFlAK+uooKkcn2fcJTnfwhMXcbrGIItR7FlYuGrnkzioGnm4+VjCjB4u42A5BpGp89Dp05yiZYKQbIX8c9fp/siTqKXPtlaxt+UX1xZtA5LRQ/8D5GSpHdpWM19FEIB77jios6p7/apapu8CQPR/XjdbA==
+           properties :
+            x : 3
+            y : 3
+            width : 334
+            height : 61
+           type : 8
+           code_elements :
+            type_code : 8
+            p_codes : []
+        type : 40
+       controls : []
+       code_elements :
+        internal_properties : CAAAAAgAAACVbIAZKIyLUtOx/TRl3LdawH8KiRIbZVPHIi3CQG0ZQWORAsfR1LV9KK1m6uVL3Trxd5kjIU0MB2uWkg==
+        type_code : 34
+        p_codes :
+         -
+           enabled : false
+         -
+           type : 234
+           enabled : false
+         -
+           type : 43
+           enabled : false
+         -
+           type : 42
+           enabled : false
+     -
+       name : COL_Del
+       identifier : 0x22ce5d47048c7e9b
+       internal_properties : CAAAAAgAAAB1OpVIRQ7BLAQ6pjzpnGfIXc3tI9sI/flL87SI5QYASZ4qUyRf3/V5udccXUAN4XzJQjJIFKRZOV3Pk7mr2u7GBv8qEqOQjesq4d9evr/5lrS158xH7wWuq0XEUyRqQiLKTvTn9Z4LZm+zi6iKnnANzRylXIrYr5MR4n7NTNSJJO98NKSgebfzbUVBp064ZPI78gGDuL6bmqSp0s1fKg859p6SJcxWIjALHNQ=
+       type : 40
+       content :
+        internal_properties : CAAAAAgAAAAEkUxD3ozqzqVXi2Cvg4MhtutwiKOM5DrFE0g9Aod54Xx483svblxYQpbJlQBsv9BgKZVMmd3G9KwdYByo3OTkH9G23sfzvSJZrfCw3/MXcvpY0Olp9fLuZZQh+fFR9HbNWrR7pJObEiSpSmKKZTUzdJIPRzkM/VFTbdx53BhbHkPMSilEZ/Qx4sLTjlMzkmeG5PgZTwu/p3aFFODBbk/vUqmAh6m30xd97AgK7/djmiX591EXnnWLWetcc4ZdiwNG5zOzGPhORnnndfoRNead4KpuGgCq4LKn/nSMbddiPN7zg4maxfFLPafmi6OVtkYDz3eDJcRZq0IjwIwDEOc/ZgjZFfopy4lJYYtFxrYdPxCgjgIcIZM46+6hWSidYeX3kb+RoQ==
+        properties : {}
+        controls :
+         -
+           name : BTN_Delete
+           identifier : 0x22ce5d47048d7e9b
+           internal_properties : CAAAAAgAAABim6PzfQr+7a8cpPuAY3836cqEYMHnmX3ESLnxTN1TToNveq6jF3gr8AEnGv7ziAgVmwAIu4y/Gh0uk6l+sc+PNQWu9M/n142XC6VKz2Tq20qaFLhEEjcm8vH2YVxCARk3t5Z/kldfagzClOuhgyRBeuFOzB9ZsfVmPqzFzsWLcfhPfzyR79u4DBMMvOiwm0VAqxoYkru/zk9jFygRR8G1jbwJD1ldpkahj7mnQLx1cPP3v3IToLWiCXw35b+cPnk6K2KD9kuDIzqnUE69o6e2rZbjNn5X15dF0jwjJaTE8qYuB0ncdmhfAyB8TinKX+FCo7gwYw7y9qiNVJasnYbKKRIXmF23QAa9+36D1F38M605dk+d91PrF4/2zEMIAUrYLO7NBeF63OFs99Tol67m61RA7Lrh2mZyIxxN6johqr2fYG8+Yv2V50o1WLGB3qESqeI8Hh9OR5mPtDvmux1/yCLYr8n71k7Kei01qGAln7lu40/BaLX8wAKM3J5IQWNO8bhVdromebgkJXu5PlekjEub06Qs+AOM3PXgA+FFabe+vK+JS2IXMCEA6M1lFgkGLkRYOXgQOBd03CcDmfQ7BpSWWWDkQ8ejxdDwuXfIOAc7ZCeCrKc/IRNo8Ob3HRRMmQirbeJsLG6CENGw92KMmpKttHUTGtXRmBdBkfDZdVWmCcf/ewxhEKFjQTkXhRf4S8d9KORv04zbwUOv7TUAMU/87NWJEtPLf01XCnD5sdEv52SuwobATolyMdwVSdBpkB3JCDLzewoZl6m5Iz8XZE+hyBw1gIjFUcsQSgdlhTHzScpZxDzdGdtj10Xgp4rLuYFjHHQZY+l/Bw2xrkmXwN1Im/aSnuqD1fsUboYdiavKTjHLNPYwQf0OIXKHZgq3cKL075Am3Hs4LIuUhhxH1J5St1c8Nu2AaA==
+           properties :
+            y : 15
+            width : 32
+            height : 32
+           type : 4
+           code_elements :
+            type_code : 4
+            p_codes :
+             -
+               code : |1+
+                //1: &Delete the history
+                //2: Keep the line
+                SWITCH Dialog(<§?1C8108C300BADCF9§>)
+                	// &Delete the history
+                	CASE 1
+                		ArrayDeleteLine(garrClipboardElem,TABLE_ViewClipboard)
+                		TableDelete(TABLE_ViewClipboard)
+                	// &Keep the line
+                	CASE 2
+                		// No action
+                END
+               type : 18
+             -
+               type : 161
+               enabled : false
+        type : 40
+       controls : []
+       code_elements :
+        internal_properties : CAAAAAgAAACVbIAZKIyLUtOx/TRl3LdawH8KiRIbZVPHIi3CQG0ZQWORAsfR1LV9KK1m6uVL3Trxd5kjIU0MB2uWkg==
+        type_code : 34
+        p_codes :
+         -
+           enabled : false
+         -
+           type : 234
+           enabled : false
+         -
+           type : 43
+           enabled : false
+         -
+           type : 42
+           enabled : false
+    type : 9
+    controls : []
+    code_elements :
+     type_code : 9
+     p_codes :
+      -
+        type : 35
+        enabled : false
+      -
+        type : 22
+        enabled : false
+      -
+        type : 24
+        enabled : false
+      -
+        type : 23
+        enabled : false
+      -
+        type : 25
+        enabled : false
+      -
+        type : 230
+        enabled : false
+      -
+        type : 241
+        enabled : false
+      -
+        type : 263
+        enabled : false
+      -
+        type : 262
+        enabled : false
+      -
+        type : 222
+        enabled : false
+      -
+        type : 223
+        enabled : false
+      -
+        type : 224
+        enabled : false
+  -
+    name : BTN_Clear_the_clipboard
+    identifier : 0x22ce5d47048e7e9b
+    internal_properties : CAAAAAgAAAByY9gVe9poiq8cf1M7cMNggdEqpzx1R0cllaofna2yZ1vcrdrWczrvMUr26h/KD2oZeGHYJiYs1+ABuyOdnvWD8dseeEvn73Ym0UCf9olsL8jerc8lqeVUM8s1cTfpbeYo3p6+02BKl0WmTYbrVt1Ty87dy1aMfKz9h5UAtTHgGVkzFBWxUCod7eTpHwJaq1wlpmiB0C8GGLfSVmdQYUiMVTuOJQJkDxsAGUEktSNpMGDJPJ6f4LQpzV2RvxVg2Y0BKcuxHgZ+Zjt4cguDkibgz87wqWCS26E9iSxnBYDnexgaZg7QN0U4r5UJg+bPdkP92tz/CWT9fosrALCFkP2asqI+KXbOQEe4lgaXyZ/qH/xpJ6rPS5iRhUsnZPSaS2G6pX0+rksFaTjajh/EEjgNpu6uQQmSqkYCEAUphGQeOBNNm0D+lbHF8vv5l00OHHAeGfnxqw0xmabB9sNXvLCKyzcJSyObHhXUskUVpNjgvklYcj7X7TvZNI8XhXjnVe1PDULiOL1Wd6/JZ932/IrtP0dygDvAQEoufZiJvFNxWn9t1lmxwXdYavddX0c6Gwc0w7Twlv4FffzQeRgikYKItzpe5dXGasBkgd5mODDUFXGZRkPiPFxeMQIoCNmPkzPVkhqiNsIxmBndWcrHfAaKBVY2HgUzroXFQyGn3pXY61UX4Iwlj21bI2rzY6JBT644DFo+mqs6pux3v/9/AZlsWVRBgZ2UgHb0MO+lggKBdycsE0YHhhyCfEA03/YOwljcZfS9NMTaNM/HLlxHiywaHwPboixxGDe6ftyMydsz1g4+P8SCughHuG3rv+N9YZZbqBiJmgIWQU3ocq5FyHV9Q5B4Oal/NCunOpdEaKbi2EWruni0joq/p81/wuSKZK7dFUVre5XvzpcFZckPX1eCrsTiARgYYCxxESy+KvmUICegzxRh8PpLQBWnMUokUVHXXoSd8mwLO/Z6GDXZkRIaB8M=
+    properties :
+     x : 6
+     y : 508
+     width : 154
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         //1: &Empty the clipboard
+         //2: C&ancel
+         SWITCH Dialog(<§?1C87C35E005DCC36§>)
+         	// &Empty clipboard
+         	CASE 1
+         		IF OpenClipboard(Handle()) THEN
+         			EmptyClipboard()
+         			CloseClipboard()
+         			TableDeleteAll(TABLE_ViewClipboard)
+         			ArrayDeleteAll(garrClipboardElem)
+         		END
+         	// C&ancel
+         	CASE 2
+         		//No action
+         END
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : IMG_GetPreview
+    identifier : 0x22ce5d47048f7e9b
+    internal_properties : CAAAAAgAAACx/14ZiJznihVIk6ucgHiebHa1OwCh+hydAds6ZvVolw4poUINFbKUVwic0y0wai7DjqfcISjIUA/GeuIBSvi8F0oibFrakF4zfrNf5UZTEZ6JBSUK+2C7QgiR+PBKRUS8fmWdsAVTRQkJU72B3xbxAFEp1k+s6vY+M/d4+7MIPBzgUpa35Tu875/tBFsnyAQfo8gNRn3en4L7T9tzsRjRVLs9KGpr9mAwxqppUhShG1iqhrIS1hHsyrzgaR54V9JBaSmhEx+J+ucGJSI/vjbrp2JNbBwE97iKnZAfEK+7/RbkACLiCsrONQw3WLUt13HPN1Nd2Wr3O5JojEcO22u7XRprkxL4EQtVNJoFVAD38Gn/vvsjZg3vPcBBQbct3Jg0jIYStRrxatSNGCAA/dTCScT6nk42tffZ4HQQxETTNdSrYuCOa6If9ZooJo4RDe5ge60JVLygMsRwQWJS6DlYd4WjmDC1wJ88PsIWO3/jLJQpPXVTXRECW36EVtEqVMsAv8odJVjGTUoRPn4Y/1NuBauTKi0flYKaf4vucPLgwtecDbziv4taKfSkYGRw3uE7mKZqFP/LjEtSGXHwjEtIBh952ieoG44HawjAR54pYbDjCWTSdlQWu8tLkAEP2j/o3B5vypJgE7COiadflwYeiAcioW+tiJ6lGHSaK3sYeWK/6Nzf8FAwb3vqH6+bILWx0pjjdTrKC7abuOItc4+hPo3NjNAupB2U0dfRiaAW53XoWPZkOdEWdp3FRguPoj2adE7QKOIGzjpfcC+gmIXexXpfrgBJS1E2SVfcDukdlomprjidE6yELit2ZPO45XSffPLS/kWgsQ==
+    properties :
+     x : 494
+     y : -26
+     width : 68
+     height : 57
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+  -
+    name : BTN_About
+    identifier : 0x22ce5d4704907e9b
+    internal_properties : CAAAAAgAAADLQY5UNb0zRRmFuwxdh0PQ26Lu9hQBfKHLUDfGc4mqqv4HpC4wPRTQZq1KbcjZpCnIU/Qfbew+jOU/q28ZSZK/QN+RHIxTGOy/ga1NhgOdbRwXxM5GwGB6TRYzuBAGzruLabGZ7yxAbB2zMNqbc7tHsLChLSYoPD8Udqu57jm2UOPJRznobjNOPAIHrutYlUmGhnVTJqPnvvfvsZ3kOAKwCyE1tej/RtH5OVGFjzbIsnVk709e1CqpC7ZKs6ClX7e+Jd6YNo/Hv1qDO54eB/Of/tno5cfdJuY0R/Ri5fAsGk/0CMT9o5APWHciE4cdD5m7G1EvTUmk/9ETBBOIDK/enp9yIgFhFgWPbHCCNlyToiNJFpgbI+snoejgiXAxbYm6e6bNIm5j+XL/vxS4YS3Kns8jZYYTc+Oh0rwEXF0T1hS55//wkw0oT25WwrQTt3d8TAL+BelCQ8GwwL+NmhPVPdB34ACcFMtwujjU7GApYlQMTYlk/uF/zfu0bEnDIcPsS60UbxNw6sUBaEcDkwEKCArnkgAJ4gmTMMjFkqbVBuGTJr4i4tG+vGMkhvLqaHOrXu1ScQqQ8Z9sXDeAqRFCyeUu9TvIAw53jQdngCy1k8kvOFi2xqPvBDo3JRNcrjdLWhSoA6fZXVunmnFlAvA01qoupVJRHlzia3O59gwRsbH7Yq2vAiurxUUg9ACHBA8I2mHqk/q5GulnZag9f/8qO6YWOifitBc729JXmJEdqpEysW7MwiQ0ha5t47XUi65op4s+8m+N1O88H9HzNe4t4m7q7+jCaYQa57zluJbHUevP5o+6/Ysm9za44jfBARGciiysvZYyZqWT7nBEi+Dvm1WIHomRkNbJqeyKgPX3yB5QaaFzg0zrWso59Hl4BjZdI97FoRmLGsNQLmqgkoDOnpyxot9l1SClrks+Wf6GrRB69OPBdoWyxnYlFMMGYrPfNttNXCasFWnus9hibk6tCrcUzrE3sA==
+    properties :
+     x : 6
+     y : 538
+     width : 154
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        internal_properties : CAAAAAgAAAAxHwDtI50lDO4e5OCLVx4t9fdYlVUTPTlGGWm0yMoAkCb89grntRgone2cIb8hfnS5DfMql74XhmavJnFH4vJ7sSM5m98ZlYsrEd4XEsnXH+7GxI7WywvnAbpv9ls6/PS5CI3Cc1RNdbbygGSBCz6wfWnVYg7jzrE7ZIFAguU=
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : STC_WD_Multiple_Clipboard
+    identifier : 0x22ce5d4704917e9b
+    internal_properties : CAAAAAgAAACy5ozfSV5OO2fSas6rn2Odpitap9nwh5wdOqMwZyEt14SBTvojJBl4sErOiuY5knUoqW7arSGP8VASbQyYaCKZjavimT/AjUV5ZUcfA/BNmCY/7XVW6jXW58crJdKSsOjjMjYga8h/+8BRWYf37nL/czeJvd2SrFMZeU20p+uuDR6eCn33TcuVwTJOOtobMtpcj+7sdSHmjw8iFGIClzADFrF8Ycu5fbxyfG+yRL7UC7A6Bq0qtm6bmLE+1SVuXDF+PCKKx1WhPRbxLr8C83Uj5Q1re6PhbA9l4NvvegPcMQNcMJI1Mk0DRIKhonhPaU2RCbjpFUtzRo8khpQHZkNtdc74+U3qV2RmqyZsWefonbE8R2K6e77OxW06GR9KSu3IATW7pOwmrb3pF85qalzv11NEeWrPBqVCDZfU4zeB2E1nbJUaQFthcKgFHM/OI8jf/WJAUzbEJuu7rXbEtcM=
+    properties :
+     x : 6
+     y : 6
+     width : 249
+     height : 25
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : BTN_Minimize
+    identifier : 0x22ce5d4704927e9b
+    internal_properties : CAAAAAgAAAAjD6I1WjoZeIJHXLp3jrAxRzLkQnqNS4kFvejcB47Gd6vdOoIaJkZ+FaF6A0WD6ukBT4/FN5iCCIvLX2fgeRSlG7gGoefH6ZWmdAkVQr5EYcTFu6ys+luqTgpGbfGwZKxbAlDmaeMvBdyA7JhmgVidxTtXpT6z7T/hgBjwyTOJSIRK7VH5V0UAg1uoQCTl1swdrx/CLpLuysS4ZvYUv+UtkvoSh60bcf0LPF3hAghUK6S/f3vJma+NNyaWHfoHYNXmyXbykL3rGU3ZqUz0Pz7g8Tf1iEkEgYKihlzBW8q75svLW3xqwldxoFqS0IlG5D0l2Kva8GMAFZH/OExztonQ0SoR4XXZdP88j+q0d06tvUaza5FvhpS198DKiEhqEow76VLlcqajcrqI4I0s64kPp19EOij6porn142UcK6qlEesFPWIZmZ/c8pwl+81KYLLkArPeMjmpUGBsrMEV1skOrfmah9dKldMQDMUWQJWUpKXOmJekjfbRLxWq+vTGGEeRwOElb5TSK7Jlp8/pwAAAqD6i+ZlMuFzKiJwBMXjdVpLne5SiSBAlOcdm8KojOZwu1XmJakqNMQv4WWnqnEpT2hFH6FnwILD8s67xNu7V436EPgHb9xDYL6AI2kTSUSeiydD21ENbJqL1CZXRLL5H5ymPxNxAjjKMVxCnKnEPO9cduxdh0Cugn3BwUpwD8ecoc+h9gJHVcknVnwOGI5Kwy8cwJnG/3DCDap1qPmp74OxlxpYVA017PTtbPj/lbtuIg0cVEc6pwRCfJR5IcWdvaooOz2Lx1nhouWxTbOtS3UAemsnCuReV8+q7CAjMXAcAYbyPFYfVKKeb7BN0d70ocWVUe12g2DweLfc
+    properties :
+     x : 494
+     y : 37
+     width : 80
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         MyWindow..Visible = False
+         MENU_PopupMenu.OPT_MinimizeRestore..Caption = <§$0002§>
+         ReturnToCapture()
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_Copy_from_the_history
+    identifier : 0x22ce5d4704937e9b
+    internal_properties : CAAAAAgAAAABS4qKhy0KEgSlUIxSrQ488/ujHywisfBL5a7mdLXcBCMlOozQzg4R5N27KUw9Kc/OxQKloX+WXMtNnIj4yyqt6xK12OwVXNBLCPeQCD1GPJ2949YAwf9ddZKQYRxxo5JYdYOtaNwerWk8abPawphZk+MrxnltzAUEAkuAALDvLLcMUZb5CRRBG3KluAlCVEjMi9zjuM6q9AsKLc4jmd5RnbJ6UzWu/1IYLHOnFLHLtyyWStkWVsoBCJnvn+nEDz27Q6WoZouuosO5HdyM9ZJUEFXbq/Ddb0GWUai4t9BYihv2Wa7STSSZkgs085TJZOLCCNIFbmIpe4X4+yyN68TdG2PVuzqaS9I18MOru3+1gJ8yAuFkYU+OFfafklLHFdnclV9n22a8zVHMdNURk26en/9rgdXmaRSP2LQ/jboAobVCMH3ZoMO6+UXwecuDg4wFSqujvTtcR/t7h5qjcy5byzIJqSy/nT+CffhkKFlaY5WF6aGFpxqtXhC2K++/BkffXP4uYMx4yO1vchAQx2Q/H6Mt2kKbmSh/EsIyUPUp/AE0fYkcIkMImWVHLlyXYQTHGbF65BmmgRZVcGIJPiIrT369ERwmFXnWRp9/WK6mZxGxmmf/xcZyh78MwLcYW0Di3iodxAZd4EacJ3BVGJAojXpskZCGoNUw8x56u8MPriVGmZfJOLtNi+gMcFwqOw3vUvtxTz1IeRzT01INiIORFBp8S6FuKE1ruMAPicH04/0gNHXvbFSNbkq1bZHaWhl6+ZgMqNF774wQed8u/SHtbayLCmiYou4/nn0Fsjs6n9aCzcdpTh8AajBSNgxmQOOfrg4LQgghUSY6nisp2K1EiulTwhDEp5ehPd+bn7t6A/efJJhUs17hwVdyHIrDrGgasI8nfpYF6/Rnrmdmd1/mmFTH11qwKA2rTmf/EL4m2spYhtNEOv1pjJuU4N/OA2y+4HKzpMZNNWBIGwXqHk3Hp/uIv5hCUi9aVBydJs+Je1tYEeTwU2Nv9/viAblDjzUQWGvgqlf/cFW0UF96Fjsv+9DCkyVbmA==
+    properties :
+     x : 6
+     y : 478
+     width : 154
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         
+         // The value returned is the rank of the piece selected in the history
+         // Since the table is displayed from the oldest to the most recent piece, we need to calculate the rank
+         nElementHistory is int = TableCount(TABLE_ViewClipboard)-TABLE_ViewClipboard+1
+         
+         GetElement(nElementHistory)
+        type : 18
+      -
+        type : 161
+        enabled : false
+ menu :
+  name : _Menu
+  identifier : 0x293d29ec82bd6b20
+  internal_properties : CAAAAAgAAACCv199ARoPUfG3WAPSG9eefhOOjWMQrs8CrX6cGGGJPoSHWBq4PXhStOWc1YnAZMZ5+EFR1WTDn8CTOTiyLnXPpAR5X8rsRkPZrm1yZeYDDt4kRzDPLbUf4Sh/mD3kd1D8V2drCFLmjeQhgpw7GKGwHRga+ZdjSqXGIC3LD1RracZ230hOmUJTj+ABDW4IHrw4PflmVGgp8E9KnAf/gselRrzEY90l3Cr9N00QijFYYrbrl4qF4kdim1YX6jYT4ezQhbJsU84ENZsxzq+o0JVHYQ8rxck600VhGV04/ao=
+  options : []
+ popup_menus :
+  -
+    name : MENU_PopupMenu
+    identifier : 0x22ce5d4704947e9b
+    internal_properties : CAAAAAgAAABxJU2fS8HaK2oWldglxBEk8qc2oVDWZBdFMU9xX/6BvUCpWII5Za61Q2ELbVxgd7deR4zuHw4r7aG99jk1ksRz8OJ+qi2oQbz3qkM8jBiyZzi89qZvE7O5iLXa9jyZgnIbh1BSh0zG2TFKvwMHmEUWHFd9fsFUQeOYrAlUv7WmDtVhmvIiW/eLel8l2EvmZEVeL3b9UxBO6t6oCYuHi8JjKqh/EY0hTSe+0BKQBJt3uMy9JU2iDNwvGOSoGGBAXUGdJmmz5ad3fN3mP6IdI3F+HRsdphQ0z/yETKsxuUUA3Zsbd9vZV4rZxxa7pF8W5smSQ/+Cv2yZuqaDqhmOpnhmCT4z1AaDwUNnW2mnuEzOsKGEA0bknOfdBDt1t6pEoKO76mNrXNFNk7k=
+    options :
+     -
+       name : OPT_MinimizeRestore
+       identifier : 0x22ce5d4704957e9b
+       internal_properties : CAAAAAgAAACkkLV+hNtE5phbBDvu22neut/LRhrVqHXUAe2Rv2TQ7U5RLN+hFdZTH83QAvwV+IVEHGpYvKTIoWUO+gXIy912kiy1F5JuW2Lh9TbK+DX1RNGYYxJUPGxvVUJgIW1+zgi6aovEoM/LHcL7EgFzr3p/SqxdYqaq7/iEEbALjxsk/lhmSVGWhyn2ZZBS2ViQMEtVe7HIC3qXu0MBqOyp74YEZKMEBrKOdzT/dPQXe7dAdNqgHkzDYQ8obLCHkrdGRcMi6Dib7pjefvLrtFvWy0ql3CLpW5JrUUcWz4TWGpVb1uym1vNRb1vmUlnTV6N9yMWiDsclYmMMxebkFhenHViQXeOuc006UP39CH5UMPsYWjPSYX0TCd9N/KK6I8lqFVFHQaMvB+WLZRg5fINYlD1UcIOf
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           code : |1+
+            IF MyWindow..Visible = True THEN
+            	MyWindow..Visible = False
+            	MENU_PopupMenu.OPT_MinimizeRestore..Caption = <§$0000§>
+            ELSE
+            	MyWindow..Visible = True
+            	MENU_PopupMenu.OPT_MinimizeRestore..Caption = <§$0001§>
+            END
+            
+           type : 32
+     -
+       name : OPT_Separator
+       identifier : 0x22ce5d4704967e9b
+       internal_properties : CAAAAAgAAAAFZyO9ayBJEcM14edJ/XjCoR0baN3Az4XYFgdooTdc+TOZencGpaa3C9sqNAmuwbQtb3vxync35sAL9mpwuCZxYqoCxlt50ALDzAkA4yj7P8Bmih/d3bWNmKc7Bwz21IOsRjjk0PsWffn6deQc/tuZ+CKy1v80U0kZ8GSaZ/CdOsoCXg2hewXYWw4MTlznzaoKnl4nyci6DneIHTqvDgrP0CvCikA51vhchgYdsTESLQ2WqXmTC4OgU+0S4XG6wVQ/TCn7eYKTSYmo3uqSq7QX15Wv3c6hM2hQVh/gkK1i5wizJR1Mmqj3DugcLRqHLoELYytEmrbJvoMpK04GL+2n4rGkaz3Y3pubTfEwtc4S/Eri6EOhdaOmFhRw5VDeUxXfoG+VhS5I0iqEp7c1J9tqKPPrHPEa7MA2+bzIxsOrrHW5D1dPSBj79kSE2n4=
+       code_elements :
+        type_code : 26
+        p_codes : []
+     -
+       name : OPT_Exit
+       identifier : 0x22ce5d4704977e9b
+       internal_properties : CAAAAAgAAABMt67/kCl4x/Enpke4xZ9EnfCLsRsluDEXbukKeZLyv8qHR5ZeIm2LbuTPFEScQ2995L2wQWZYSWNR2Rbw7KsTj3qyoYHUyv+pXsbUrsFjf9A9/fy482qAfYpF3zF44NDu9nqn/AOblrdj1vh5pChRVR9xpn4xp2CalZiNQ3rnk1Urk07VF+Z9STCdz19Kk+BBG5KxclZl3pe9Ddd4ionAUfM5uu3KMVs9Vd0HilJ2WswkhzoxVIdxouH5FpoQ1vk9nGmmxBHH71j/jxbFd/SW4nlLk8SkHv6BO1Imi7DS6Iud3ra2fYny/r83jvxcuJC8cLhA3RdewPwlRkjzK+2S4rSRetAV7Q3+6o+QqJUQpV8j26k9dY+JQ/V0WSA+jnitE1WjYza3EJT6VwJToQVZyA==
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           code : |1+
+            Close(WIN_ViewClipboard)
+           type : 32
+    controls : []
+    code_elements :
+     type_code : 26
+     p_codes : []
+ languages :
+  - en-GB
+ message_bar :
+  internal_properties : CAAAAAgAAAAjFWXItEk/EPvcbGR+hALkgRfdOpVtIn+yZNxHnmSRFJegE/AnD2HbGAaMfhGCqfzkryHG9FVhjtF+iQYkZ59QBQ88Okhh0vjCoVhOagox2hvIqrJnU30QK15/ZA==
+ actionbar : {}
+ code_elements :
+  internal_properties : CAAAAAgAAADMBdv6je/v8dNEuY+KYbGtUnni2RTxCIWxCmkFdH2x+bEV3SS9FFPVXVhMRS1Yt15R4tZTi1bH1YjE1n5BxzcvGHpeBOih5SQ=
+  type_code : 1
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAADvyf41vULoEiuwex5ACwhJx1H0AIhxs59bVldMpKH3n2WQRlQjrOFxXA//QFxqLQ7bLvKs4Dj0NnSrGq+mukjim7PWBaPOQjKaPNQuXCwSmOlrWn3gBUCxJk5XrrVT4dLDd0HTsGdOrqAy04g=
+     code : |1+
+      
+      // Add the window to the clipboard observers string
+      gnHandleNextObserver is system int
+      gnHandleNextObserver = SetClipboardViewer(Handle())
+      gbClipboardModificationInProgress is boolean = False
+      
+      LOCAL
+      	
+      	// Branch the events 
+      // WM_DRAWCLIPBOARD is received every time the clipboard is modified
+      Event("OnClipboardChange","*.",WM_DRAWCLIPBOARD)
+      // WM_CHANGECBSTRING is received every time the string of clipboard observers is modified
+      Event("OnChangeClipboardString","*.",WM_CHANGECBCHAIN)
+      // WM_HOTKEY is received each time a keyboard shortcut is pressed
+      Event("OnShortcut","*.",WM_HOTKEY)
+      
+      // Add the global shortcut CTRL+SHIFT+V
+      RegisterHotKey(Handle(),ID_SHORTCUT_MULTIPLE_PASTE,MOD_CONTROL+MOD_SHIFT,VK_V)
+      
+      // Initialize the table of elements by adding the clipboard's content
+      InitializeElement()
+      
+      // Delete the icon from the systray
+      SysIconAdd("clipboard.ico",MENU_PopupMenu,"","OnSystray")
+   -
+     code : |1+
+      
+      
+     type : 34
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     internal_properties : CAAAAAgAAAAnESZtuXpwQpuwSx5YIzAZX0G0oBgRc4fjXi9kVIGHlxVYzuz7BKlRLL+PQFRiFQ7j3iLsgFh4usBPthuKJuRGrweayaf6Bmb2kIC6wHhebO2/PhG0sVRFghJjammfLZaHqxWHRNMyhkhqm8A=
+     code : |1+
+      // Asks for confirmation if the application is not minimized
+      IF MyWindow..Visible = True THEN
+      	//2: Minimize the application
+      	//1: Exit from the application
+      	SWITCH Dialog(<§?1C8100B6007C6AAE§>)
+      		// Minimize the application
+      		CASE 2
+      			MyWindow..Visible = False
+      			MENU_PopupMenu.OPT_MinimizeRestore..Caption = <§$0002§>
+      			ReturnToCapture()
+      		// Exit from the application
+      		CASE 1
+      			// No action
+      	END
+      END
+      
+      // Remove the window from the string of clipboard observers
+      ChangeClipboardChain(Handle(),gnHandleNextObserver)
+      
+      // Cancel the shortcut key
+      UnregisterHotKey(Handle(),ID_SHORTCUT_MULTIPLE_PASTE)
+      
+      // Deletes the systray icon
+      SysIconDelete()
+     type : 2
+   -
+     code : |1+
+      
+      
+     type : 11
+   -
+     code : |1+
+      
+      
+     type : 12
+   -
+     code : |1+
+      
+      
+     type : 17
+   -
+     code : |1+
+      
+      
+     type : 13
+  procedures :
+   -
+     name : OnChangeClipboardString
+     procedure_id : 1355123097456443035
+     type_code : 14
+     code : |1+
+      // Summary: Process the WM_CHANGECBSTRING message 
+      // Parameters:
+      //	nMessage (system int): WM_CHANGECBSTRING
+      //	nWParam (system int): handle of the window removed from the clipboard observers string
+      //	nLParam (system int): handle of the next window in the string of clipboard observers
+      // Return value:
+      // 	integer: // 	None
+      //
+      Procedure OnChangeClipboardString( nMessage is system int , nWParam is system int , nLParam is system int )
+      
+      dbgAssert(nMessage=WM_CHANGECBCHAIN )
+      
+      // If it is the next window in the string that is removed, we need to link to its successor
+      IF nWParam=gnHandleNextObserver THEN
+      	gnHandleNextObserver = nLParam
+      END
+      
+      // Pass the message to the next observer if there's one
+      IF gnHandleNextObserver<>Null THEN
+      	SendMessage(gnHandleNextObserver, nMessage, nWParam, nLParam)
+      END
+      
+      // The message is processed, we need to return 0
+      RESULT 0
+     type : 458752
+   -
+     name : OnClipboardChange
+     procedure_id : 1355123097456508571
+     type_code : 14
+     code : |1+
+      // Summary: The content of the clipboard has changed
+      // Parameters:
+      //	nMessage (system int): WM_DRAWCLIPBOARD
+      //	nWParam (system int): not used, must be null
+      //	nLParam (system int): not used, must be null
+      // Return value:
+      // 	None
+      //
+      Procedure OnClipboardChange( nMessage is system int , nWParam is system int , nLParam is system int )
+      
+      dbgAssert(nMessage=WM_DRAWCLIPBOARD)
+      
+      // If it's not this application currently modifying the clipboard
+      IF gbClipboardModificationInProgress =False THEN
+      	// The clipboard's content must be copied locally
+      	CopyClipboardContent()
+      END
+      
+      // Pass the message to the next window in the clipboard observer string
+      IF gnHandleNextObserver<>Null THEN
+      	SendMessage(gnHandleNextObserver,WM_DRAWCLIPBOARD,nWParam,nLParam)
+      END
+     type : 458752
+   -
+     name : CopyClipboardContent
+     internal_properties : CAAAAAgAAAA0j3DGSTD6ccbmS2Wq6svu88CUvMJ/ea70/mAVVaAiv5IHgZypFrQ1zOSG6HaS1dr4wMRFJrJh4wQgwS7MiLxx45SqkqQeo4Iags7uWMGC6XoHfUnxem/8mDVwqm9oKlNftsVH+N2hSlzfuoFojN2EIQcD1izBpLu0Obhi4VXrWjLsrhZTYsGcQJUHBbj4wSMlfplUz8Q=
+     procedure_id : 1355123097456574107
+     type_code : 14
+     code : |1+
+      // Summary: retrieve the clipboard content and add it to the history
+      //
+      Procedure CopyClipboardContent()
+      
+      // If the clipboard is empty, exit right away
+      IF CountClipboardFormats()=0 THEN
+      	RETURN
+      END
+      
+      // Open the clipboard
+      IF OpenClipboard(Handle())=False THEN 
+      	RETURN
+      END
+      
+      bAddGUI is boolean = False
+      stElement is ST_ELEM_CLIPBOARD
+      nNbFormat is int = CountClipboardFormats()
+      stElement.nPreviewType = PREVIEW_TEXT
+      
+      // Read the format saved in the clipboard
+      nDataHandle is system int
+      nPtr is system int
+      nFormatRank is int = 1
+      nFormat is int = EnumClipboardFormats(0)
+      bPreviewFound is boolean = False
+      bSupportedFormat is boolean
+      WHILE nFormat<>0
+      	// Initialize the structure
+      	stFormat is ST_ELEM_CLIPBOARD_FORMAT
+      	stFormat.nFormat = nFormat
+      	bSupportedFormat = False
+      	// Format name
+      	stFormat.sFormatName = GetClipboardFormatName(stFormat.nFormat)
+      	
+      	// Retrieve a global handle on the data
+      	nDataHandle = GetClipboardData(nFormat)
+      	// Map the process in memory and read the size
+      	nPtr = GlobalLock(nDataHandle,stFormat.nSize)
+      	
+      	// Depending on the format found
+      	SWITCH nFormat
+      		CASE CF_TEXT
+      			bSupportedFormat = True
+      		CASE CF_DIB
+      			stElement.nPreviewType = PREVIEW_IMAGE
+      			bSupportedFormat = True
+      		OTHER CASE
+      			// This format is not supported, ignore it
+      	END
+      	
+      	// Free the global handle
+      	GlobalUnlock(nDataHandle)
+      	
+      	// If the format is supported by the application, it is added to the array
+      	IF bSupportedFormat THEN
+      		// Copy the data
+      		stFormat.bufContent = RepeatString(Charact(0),stFormat.nSize+1)
+      		Transfer(&stFormat.bufContent,nPtr,stFormat.nSize)
+      		stElement.bufPreview = stFormat.bufContent
+      		// Add the format to the current element
+      		ArrayAdd(stElement.arrElemFormat,stFormat)
+      	END
+      	
+      	// Next format
+      	nFormatRank++
+      	nFormat = EnumClipboardFormats(nFormat)
+      END
+      
+      // Close the clipboard
+      CloseClipboard()
+      
+      // If the preview is an image, we need to retrieve it (the process is executed after the loop because the clipboard handling functions cannot
+      // be used between OpenClipboard and CloseClipboard
+      IF stElement.nPreviewType = PREVIEW_IMAGE THEN
+      	IMG_GetPreview..Width = ClipboardWidth()
+      	IMG_GetPreview..Height = ClipboardHeight()
+      	Clipboard(IMG_GetPreview)
+      	stElement.bufPreview = dSaveImageJPEG(IMG_GetPreview,inMemory)
+      END
+      
+      // Add the element in the element table
+      ArrayAdd(garrClipboardElem,stElement)
+      
+      // If the addition into the table was not performed yet, add a generic text
+      IF bAddGUI=False THEN
+      	AddRowIntoTable(stElement)
+      END
+     type : 458752
+   -
+     name : OnShortcut
+     internal_properties : CAAAAAgAAABFTqLhB+0MSUE3mwptLx8kruDDcyY7+GWDbuSilWbveYGTV4wCWHKle99e7czBuarkzGmZm77y3NIMvt8+VdT3NcueeZOkpCbBvrFdBNf919lprFJw0pNwr39ELJOrqmTlZAONn+2IpTlJ9TRHTBUEbklx1BWrI1J38ZUj3sUTohc9nXCcVUwYnqm1DbmuYJovbYC15ZCZqViHLU7fC7o+rhNV3ZEcrVAwA6OxERCQNIEw6iclWdc0p+4+rIFUwGFS0g==
+     procedure_id : 1355123097456639643
+     type_code : 14
+     code : |1+
+      // Summary: Process of the WM_HOTKEY message
+      // Parameters:
+      //	nMessage (system int): WM_HOTKEY
+      //	nWParam (system int): hotkey identifier (specified during the call to RegisterHotKey)
+      //	nLParam (system int  modification key (low word), virtual key (high word)
+      //
+      Procedure OnShortcut( nMessage is system int , nWParam is system int , nLParam is system int <useful> )
+      
+      dbgAssert(nMessage=WM_HOTKEY)
+      
+      IF nWParam=ID_SHORTCUT_MULTIPLE_PASTE THEN
+      	// Find the window with the caret
+      	stInfo is GUITHREADINFO
+      	stInfo.nCbSize = Dimension(stInfo)
+      	IF GetGUIThreadInfo(Null,&stInfo) THEN
+      		// Check it is a WinDev application
+      		// Note: other applications correctly support sending a WM_PASTE message but not all
+      		// for the scope if this example, we restrain ourselves to WinDev application
+      		IF GetClassName(stInfo.nHwndActive)=CLASS_WINDOW_WINDEV THEN
+      			// Calculate the position of the popup to open
+      			nHwndTarget is system int = stInfo.nHwndCaret
+      			stCorner is STPOINT
+      			IF stInfo.nHwndCaret=Null THEN
+      				nHwndTarget = stInfo.nHwndFocus
+      				GetWindowRect(stInfo.nHwndFocus,&stInfo.rcCaret)
+      			END
+      			stCorner.x = stInfo.rcCaret.nLeft
+      			stCorner.y = stInfo.rcCaret.nTop
+      			// If the position was obtained by hwndCaret, it is expressed in client coordinates of the window
+      			// it needs to be converted in screen coordinates
+      			IF stInfo.nHwndCaret<>Null THEN
+      				ClientToScreen(stInfo.nHwndCaret,&stCorner)		
+      			END
+      			// Opens the popup for selecting a section at caret location
+      			nElementHistory is int = Open(WIN_PopupFragmentSelection,stCorner)
+      			IF nElementHistory<>-1 THEN
+      				// Give the focus back to the right window
+      				SysSetFocus(stInfo.nHwndActive)
+      				GetElement(nElementHistory)
+      				// Send a paste message
+      				SendMessage(nHwndTarget,WM_PASTE,0,0)
+      			END
+      		END
+      	END
+      END
+     type : 458752
+   -
+     name : FillClipboard
+     procedure_id : 1355123097456705179
+     type_code : 14
+     code : |1-
+      // Summary: Retrieves an element in the history and places it in the system clipboard
+      // Parameters:
+      //	nElementHistory (int): rank of the element to retrieve
+      // Return value:
+      // 	None
+      //
+      Procedure FillClipboard(nElementHistory is int )
+      
+      dbgAssert(nElementHistory<=ArrayCount(garrClipboardElem))
+      
+      gbClipboardModificationInProgress = True
+      
+      // Open the clipboard
+      IF OpenClipboard(Handle())=False THEN 
+      	RETURN
+      END
+      
+      EmptyClipboard()
+      
+      // For each saved format
+      FOR EACH stFormat of garrClipboardElem[nElementHistory].arrElemFormat
+      	// Copy the information in a global memory area
+      	nHMem is system int = GlobalAlloc(GMEM_MOVEABLE,stFormat.nSize)
+      	IF nHMem<>Null THEN
+      		nPtrMem is system int = GlobalLock(nHMem,stFormat.nSize)
+      		IF nPtrMem<>Null THEN
+      			Transfer(nPtrMem,&stFormat.bufContent,stFormat.nSize)
+      			GlobalUnlock(nHMem)
+      			// Add to the clipboard
+      			SetClipboardData(stFormat.nFormat,nHMem)	
+      		END
+      		// Frees the memory block
+      		GlobalFree(nHMem)
+      	END	
+      END
+      
+      // Close the clipboard
+      CloseClipboard()
+      
+      END:
+      gbClipboardModificationInProgress = False
+     type : 458752
+   -
+     name : InitTable
+     procedure_id : 1355123097456770715
+     type_code : 14
+     code : |1-
+      // Summary: Fill the table using the elements in memory
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      Procedure InitTable()
+      
+      TableDeleteAll(TABLE_ViewClipboard)
+      
+      FOR EACH stElement of garrClipboardElem
+      	AddRowIntoTable(stElement)
+      END
+     type : 458752
+   -
+     name : InitializeElement
+     procedure_id : 1355123097456836251
+     type_code : 14
+     code : |1-
+      // Summary: initialize the table of elements by adding the clipboard's content except if it's already there, for example in the case where the application is restarted
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      Procedure InitializeElement()
+      
+      // Initialize the table
+      InitTable()
+      
+      // During the initialization, we must copy the clipboard content (if it exists)
+      CopyClipboardContent()
+      
+      // if the two last elements are identical, delete the last one
+      IF ArrayCount(garrClipboardElem)>1 THEN
+      	nLast is int = ArrayCount(garrClipboardElem)
+      	nBeforeLast is int = nLast-1
+      	IF garrClipboardElem[nLast].bufPreview = garrClipboardElem[nBeforeLast].bufPreview THEN
+      		IF ArrayCount(garrClipboardElem[nLast].arrElemFormat) = ArrayCount(garrClipboardElem[nBeforeLast].arrElemFormat) THEN
+      			FOR n=1 _TO_ ArrayCount(garrClipboardElem[nLast].arrElemFormat)
+      				IF garrClipboardElem[nLast].arrElemFormat[n] <> garrClipboardElem[nLast].arrElemFormat[n] THEN
+      					RETURN
+      				END
+      			END
+      			// Delete the array's last element
+      			ArrayDeleteLine(garrClipboardElem,ArrayCount(garrClipboardElem))
+      			// and the table's first one
+      			TableDelete(TABLE_ViewClipboard,1)
+      		END	
+      	END
+      END
+     type : 458752
+   -
+     name : AddRowIntoTable
+     procedure_id : 1355123097456901787
+     type_code : 14
+     code : |1-
+      // Summary: Adds a history element into the visualization table
+      // Parameters:
+      //	stElement: New history element
+      //
+      Procedure AddRowIntoTable(stElement)
+      
+      TableInsertLine(TABLE_ViewClipboard,1,stElement.bufPreview)
+      SWITCH stElement.nPreviewType
+      	CASE PREVIEW_TEXT
+      		sText is string = stElement.bufPreview
+      		TABLE_ViewClipboard[1].STC_Preview = sText
+      		TABLE_ViewClipboard[1].STC_Preview..Visible = True
+      		TABLE_ViewClipboard[1].IMG_Preview..Visible = False
+      	CASE PREVIEW_IMAGE
+      		TABLE_ViewClipboard[1].IMG_Preview = stElement.bufPreview
+      		TABLE_ViewClipboard[1].STC_Preview..Visible = False
+      		TABLE_ViewClipboard[1].IMG_Preview..Visible = True
+      	OTHER CASE
+      END
+     type : 458752
+   -
+     name : OnSystray
+     internal_properties : CAAAAAgAAACo+qxGF5+Pv9lcwCJF6Osf6mTp3kS7g/PHKFqJbSGE0C4Vq6KcN6uRnY1TOtvC8OrHpJKlma6VnRAAJ3CXzIzmdenv5WK7tA8LPumJ8eRc3j52dUcMW8klXJ2iv9znzObV4Xk9z+jdWcoBRsqLqUkJ85TxjkkqxJY4YQqnhHZD/5qZ6qAWnZs5TA0BEGnLglmV2Rg1DQ==
+     procedure_id : 1355123097456967323
+     type_code : 14
+     code : |1-
+      // Resume: Process the actions on the systray icon
+      // Parameters:
+      //	nOperation (int): type of operation performed by the user
+      // Return value:
+      // 	None
+      //
+      Procedure OnSystray( nOperation is int )
+      
+      IF nOperation=WM_LBUTTONDBLCLK THEN
+      	MyWindow..Visible = True
+      	MENU_PopupMenu.OPT_MinimizeRestore..Caption = <§$0001§>
+      	ReturnToCapture()
+      END
+     type : 458752
+   -
+     name : GetElement
+     procedure_id : 1355123097457032859
+     type_code : 14
+     code : |1-
+      // Summary: Moves an element at the bottom of the history table and copies it into the system clipboard
+      // Parameters:
+      // 	nElementHistory: rank of the element to retrieve 
+      //
+      Procedure GetElement(nElementHistory)
+      
+      IF garrClipboardElem..Occurrence=0 THEN RETURN
+      
+      // Place the selected element at the bottom of the history if needed
+      IF nElementHistory<>ArrayCount(garrClipboardElem) THEN
+      	ArrayMoveLine(garrClipboardElem,nElementHistory,ArrayCount(garrClipboardElem),amMove)
+      	TableMoveLine(TABLE_ViewClipboard,TableCount(TABLE_ViewClipboard)-nElementHistory+1,1,amMove)
+      	// Retrieve the history element
+      	FillClipboard(ArrayCount(garrClipboardElem))
+      END
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAAAspXRQsX4kpYpRJzI8SMGEUfXYJhQeqig0H9mPZLI9hoPnkeFEnSQ8t7JVd8VUY9eLyST/2DyAYB+9rK7lbHVOclfSdkhgAQ9dNjlmStKMpPl9
+  original_name : Modele1
+resources :
+ string_res :
+  identifier : 0x1c7fb15a00246f07
+  internal_properties : CAAAAAgAAACyXVFaObH4lOGSEHJoZf1MD49w+XTw2LScZCP/urkWFwy+HYJdyQ3umA==
+  strings :
+   -
+     text :
+      en-GB : Restore
+     index : 0
+   -
+     text :
+      en-GB : Minimize
+     index : 1
+   -
+     text :
+      en-GB : Restore
+     index : 2
+ dialogs :
+  -
+    identifier : 0x1c8100b6007c6aae
+    internal_properties : CAAAAAgAAADlZmXG/xNXKwxvV5tu8GET2lSyAzxbXni9SnMZ21PP4/R7SH8=
+    label :
+     fr-FR : "ATTENTION : Si vous fermez l'application \"WD Presse-Papiers Multiple\", le raccourci de collage avancé sera désactivé.\r\nL'historique sera sauvegardé jusqu'au prochain lancement de l'application.\r\n"
+     en-GB : "CAUTION: if you close the \"WD Multiple Clipboards\" application, the advanced paste shortcut will be disabled.\r\nThe history will be stored until the next time the application is started.\r\n"
+    image_type : 3
+    image : {}
+    cancel_button : 1
+    buttons :
+     -
+       label :
+        fr-FR : "&Iconiser l'application"
+        en-GB : "&Minimize application"
+       image : {}
+       value : 2
+     -
+       label :
+        fr-FR : "&Quitter l'application"
+        en-GB : "&Quit application"
+       image : {}
+       value : 1
+  -
+    identifier : 0x1c8108c300badcf9
+    internal_properties : CAAAAAgAAADLb/QG7qHVNVstRudplatKBViZdlKEdhPMl4J7qaK1nciTYbTTj3xdNo9PUgqbEWzwu4h1i1feuYWVMEvgQO5o4uMhbvcV6BGyDCamzg==
+    label :
+     fr-FR : "Êtes vous sûr de vouloir supprimer cette ligne d'historique du presse-papiers ?\r\nCette action est irréversible.\r\n"
+     en-GB : "Do you want to delete this history line from clipboard?\r\nThis action is irreversible.\r\n"
+    image : {}
+    cancel_button : 1
+    buttons :
+     -
+       label :
+        fr-FR : "&Supprimer de l'historique"
+        en-GB : "&Delete the history"
+       image : {}
+       value : 1
+     -
+       label :
+        fr-FR : "&Conserver la ligne"
+        en-GB : "&Keep the line"
+       image : {}
+       value : 2
+  -
+    identifier : 0x1c87c35e005dcc36
+    internal_properties : CAAAAAgAAAC5sep6k+mHHP2QPBI4ly/SArqlGHHuNMaJkOxSbs1GeKjzGYzKMKo7HB21vrWJ5CupIYzRQngDH0jsFVPEgXGdEHvSeuW1Eg==
+    label :
+     fr-FR : Tout l'historique du presse-papiers ainsi que son contenu actuel vont être supprimés.
+     en-GB : The entire clipboard's history as well as its current content will be deleted.
+    image : {}
+    cancel_button : 1
+    buttons :
+     -
+       label :
+        fr-FR : "&Vider le presse-papiers"
+        en-GB : "&Empty clipboard"
+       image : {}
+       value : 1
+     -
+       label :
+        fr-FR : "&Annuler"
+        en-GB : "&Cancel"
+       image : {}
+       value : 2
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

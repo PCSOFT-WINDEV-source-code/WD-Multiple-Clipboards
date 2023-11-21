@@ -1,0 +1,259 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : pClipboardAPI
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x1c7fb1aa0027a68d
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  type_code : 31
+  p_codes : []
+  procedures :
+   -
+     name : ChangeClipboardChain
+     procedure_id : 2053555474903090572
+     type_code : 15
+     code : |1+
+      // Summary: Removes a window from the string of clipboard observers
+      // Parameters:
+      //	nWndRemove (system int): Handle of the window to remove (its the handle passed to the SetClipboardViewer function)
+      //	nWndNewNext (system int): Handle of the new window that follows the window removed form the string  (usually it's the handle returned by SetClipboardViewer)
+      // Return value:
+      // 	boolean: result of a passing the WM_CHANGECBSTRING to nWndNewNext (usually set the false except if there is only one window in the observer string)
+      //
+      Procedure ChangeClipboardChain( nWndRemove is system int , nWndNewNext is system int)
+      
+      RESULT API(USERDLL , "ChangeClipboardChain" , nWndRemove , nWndNewNext )
+      
+     type : 458752
+   -
+     name : SetClipboardViewer
+     procedure_id : 2053558644589037769
+     type_code : 15
+     code : |1+
+      // Summary: add a window to the clipboard observer string
+      // Parameters:
+      //	nWndNewViewer (system int): Handle of the window to add
+      // Return value:
+      // 	system integer: Handle of the next window in the string. Thise handle must be passed in the call to ChangeClipboardString
+      //
+      PROCEDURE SetClipboardViewer( nWndNewViewer is system int )
+      
+      RESULT API(USERDLL,"SetClipboardViewer",nWndNewViewer)
+     type : 458752
+   -
+     name : OpenClipboard
+     procedure_id : 2053570790756757308
+     type_code : 15
+     code : |1+
+      // Summary: open the clipboard and write-lock it for the other applications
+      // Parameters:
+      //	nWndNewOwner (system int): Handle of the window taking ownership of the clipboard
+      // Return value:
+      //	 variant: True if the function was successful, False otherwise (GetLastError returns some detailed error information)
+      //
+      Procedure OpenClipboard( nWndNewOwner is system int )
+      
+      RESULT API(USERDLL,"OpenClipboard",nWndNewOwner)
+     type : 458752
+   -
+     name : CloseClipboard
+     procedure_id : 2053571357692506531
+     type_code : 15
+     code : |1-
+      // Summary: close the clipboard
+      // Parameters:
+      //	None
+      // Return value:
+      // 	variant: True if the function was successful, False otherwise (GetLastError returns some detailed error information)
+      //
+      Procedure CloseClipboard()
+      
+      RESULT API(USERDLL,"CloseClipboard")
+     type : 458752
+   -
+     name : EnumClipboardFormats
+     procedure_id : 2053573260363134229
+     type_code : 15
+     code : |1+
+      // Summary: list all the formats found in the clipboard
+      // Parameters:
+      //	nFormat (int): current format (0 to initialize the reading)
+      // Return value:
+      // 	int: next format
+      //
+      Procedure EnumClipboardFormats( nFormat is int )
+      
+      RESULT API(USERDLL,"EnumClipboardFormats",nFormat)
+     type : 458752
+   -
+     name : GetClipboardData
+     procedure_id : 2053576438639017738
+     type_code : 15
+     code : |1+
+      // Summary: returns a handle on the data of a specific format found in the clipboard
+      // Parameters:
+      //	nFormat (int): requested format
+      // Return value:
+      // 	variant: // 	None
+      //
+      Procedure GetClipboardData( nFormat is int )
+      
+      RESULT API(USERDLL,"GetClipboardData",nFormat)
+      
+      
+     type : 458752
+   -
+     name : GetClipboardFormatName
+     internal_properties : CAAAAAgAAADu/kqCvvr8AVVUDfs84zO73x/8dBiC4m50kArkm3I/IK1WOg+KFGCLmGwyyACYZth1ke7Sp9O8va4v1tDyVsQ2aHVW6qaYEOJZA5OEjsNR+bgyp0b/exyCymlZTHDbaAYgvsIBeHgry8/dxNZibGSP2AcInKDEbJRJ5Qj/oV8Au69HOKKxrK8Swq/GKSia3Q8dnzXDhLV6Ni0p25SKeQrfRcn7Bpvth+We31pFGCL5b8g4I3JHpbdTC1Xk7JSUDfZp
+     procedure_id : 2053591166082421653
+     type_code : 15
+     code : |1-
+      // Summary: returns the name of a data format from the clipboard (if it is known)
+      // Parameters:
+      //	nFormat (integer): identifier of the format
+      // Return value:
+      // 	Undetermined format: format name if it is known, empty string otherwise
+      //
+      Procedure GetClipboardFormatName( nFormat is int )
+      
+      sFormatName is string ASCIIZ on 260
+      API(USERDLL,"GetClipboardFormatNameA",nFormat,&sFormatName,260)
+      
+      IF sFormatName="" THEN
+      	SWITCH nFormat
+      		CASE 2 	// CF_BITMAP
+      			RESULT <§@1c7fb1aa0026a68d0000§>
+      		CASE 8, 17		 // CF_DIB, CF_DIBV5
+      			RESULT <§@1c7fb1aa0026a68d0001§>
+      		CASE 5 // CF_DIF
+      			RESULT <§@1c7fb1aa0026a68d0002§>
+      		CASE 0x0082 // CF_DSPBITMAP
+      			RESULT <§@1c7fb1aa0026a68d0003§>
+      		CASE 14, 3  // CF_ENHMETAFILE, CF_METAFILEPICT
+      			RESULT <§@1c7fb1aa0026a68d0004§>
+      		CASE 7 // CF_OEMTEXT
+      			RESULT <§@1c7fb1aa0026a68d0005§>
+      		CASE 11, 12  // CF_RIFF, CF_WAVE
+      			RESULT <§@1c7fb1aa0026a68d0006§>
+      		CASE 4 // CF_SYLK
+      			RESULT <§@1c7fb1aa0026a68d0007§>
+      		CASE 1 // CF_TEXT
+      			RESULT <§@1c7fb1aa0026a68d0008§>
+      		CASE 6 // CF_TIFF
+      			RESULT <§@1c7fb1aa0026a68d0009§>
+      		CASE 13 // CF_UNICODETEXT
+      			RESULT <§@1c7fb1aa0026a68d000a§>
+      	END
+      END
+      
+      RESULT sFormatName
+     type : 458752
+   -
+     name : EmptyClipboard
+     procedure_id : 2053854005193857825
+     type_code : 15
+     code : |1+
+      // Summary: clear the clipboard (it must have been opened first)
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      Procedure EmptyClipboard()
+      
+      API(USERDLL,"EmptyClipboard")
+     type : 458752
+   -
+     name : CountClipboardFormats
+     procedure_id : 2053854928611845513
+     type_code : 15
+     code : |1+
+      // Summary: returns the number of formats in the clipboard
+      // Parameters:
+      //	None
+      // Return value:
+      // 	int: number of formats
+      //
+      Procedure CountClipboardFormats()
+      
+      RESULT API(USERDLL,"CountClipboardFormats")
+     type : 458752
+   -
+     name : SetClipboardData
+     procedure_id : 2053936648966272708
+     type_code : 15
+     code : |1+
+      // Summary: Adds data into the clipboard
+      // Parameters:
+      //	nFormat (int): <specify the role of nFormat here>
+      //	nHMem (system int): <specify the role of nHMem here>
+      // Return value:
+      // 	system int: handle to the added data, NULL in case of an error
+      //
+      PROCEDURE SetClipboardData( nFormat is int , nHMem is system int )
+      
+      RESULT API(USERDLL,"SetClipboardData",nFormat,nHMem)
+      
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_ProcéduresGlobales1
+resources :
+ string_res :
+  identifier : 0x1c7fb1aa0026a68d
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      en-GB : Bitmap
+     index : 0
+   -
+     text :
+      en-GB : DIB (Device Independent Bitmap)
+     index : 1
+   -
+     text :
+      en-GB : Software Arts Data Interchange Format
+     index : 2
+   -
+     text :
+      en-GB : Private format bitmap
+     index : 3
+   -
+     text :
+      en-GB : Metafile
+     index : 4
+   -
+     text :
+      en-GB : OEM text
+     index : 5
+   -
+     text :
+      en-GB : Sound
+     index : 6
+   -
+     text :
+      en-GB : Symbolic link
+     index : 7
+   -
+     text :
+      en-GB : Text
+     index : 8
+   -
+     text :
+      en-GB : TIFF image (Tagged-image file format)
+     index : 9
+   -
+     text :
+      en-GB : UNICODE text
+     index : 10
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

@@ -1,0 +1,192 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WD Multiple Clipboards
+ major_version : 28
+ minor_version : 0
+ type : 4097
+ description : Managing a multi-level clipboard.
+ subtype : 0
+project :
+ identifier : 0x0
+ internal_properties : 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
+ configurations :
+  -
+    name : WD Multiple Clipboard
+    internal_properties : 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
+    configuration_id : 8448640002231098479
+    type : 1
+    generation_name : WD Multiple Clipboards.exe
+    version :
+     version : VI200066P
+     autoincrement_version : false
+    icon_filename : .\clipboard.ico
+    language : 2
+ elements :
+  identifier : 0x4c7fb0d100025500
+  elements :
+   -
+     name : pKeyboardAPI
+     identifier : 0x4c80c2ff000e5824
+     internal_properties : CAAAAAgAAADfuzfr2IWtvgc7GZ1Ul601kYK8vHP9aXLgkFhBMd+/CSfl8GmoWAqsZNDKNv7yjgLKSg==
+     physical_name : .\pKeyboardAPI.wdg
+     type : 7
+   -
+     name : pClipboardAPI
+     identifier : 0x4c7fb1ac000bae8c
+     internal_properties : CAAAAAgAAACMiuQwD7T8LzYa5ETjl66SLrMd3fj3jaW2FV0U+SNprxXZ3nuZr2MHg785hw/BuS+ZmQ==
+     physical_name : .\pClipboardAPI.wdg
+     type : 7
+   -
+     name : pMemoryAPI
+     identifier : 0x4c7fc644000e1fbf
+     internal_properties : CAAAAAgAAAB82lRAfySMn6aKlBTTGD4aVsW9lZY4VdaTt31kEOC8NJxmbewp35M38y+pF59RKZ9p6Q==
+     physical_name : .\pMemoryAPI.wdg
+     type : 7
+   -
+     name : pWindowsAPI
+     identifier : 0x4c80f70e0010b404
+     internal_properties : CAAAAAgAAADiWNrO/aoCHTAY5nrhl6CI1EUzqy4Iwfaniq7rHfMZ3yHh2n+brWUJgb0nkRHPqx3nbw==
+     physical_name : .\pWindowsAPI.wdg
+     type : 7
+   -
+     name : WIN_PopupFragmentSelection
+     identifier : 0x4c80f8680012f887
+     internal_properties : CAAAAAgAAAAzD2u/jPmx6sMX9Wnwh5kBXT6YWH8hHZbgWLgpSafvMZdlUImMvHYYkIx2QsI+Oq4WHg==
+     physical_name : .\WIN_PopupFragmentSelection.wdw
+     type : 2
+   -
+     name : WIN_About
+     identifier : 0x4c8509dc001128f2
+     internal_properties : CAAAAAgAAABi2FpOfSqCnbCYZvphCRz0PEn7E6qE++jg2BSVc61vSfcbuAEbLeWJAT2nEZFPK51n7w==
+     physical_name : .\WIN_About.wdw
+     type : 2
+   -
+     name : WIN_ViewClipboard
+     identifier : 0x4c7fb1720008ca08
+     internal_properties : CAAAAAgAAADlYc3R7oujvAEpMysy+88jR8SSmkmghKOOG2MOwVuzJZdpaNFK/rTWUs7IMPDgmAjwcA==
+     physical_name : .\WIN_ViewClipboard.wdw
+     type : 2
+   -
+     name : pAPI
+     identifier : 0x4c80c32c00110617
+     internal_properties : CAAAAAgAAACZ9UFFYt9XWH1FX1eeiJ+bQ3LKQnudpUq7Rc+SZNy+GiLC236eolByPvrk3KRcJJR8hA==
+     physical_name : .\pAPI.wdg
+     type : 7
+   -
+     name : WinDevMessageBox
+     identifier : 0x49392a4900bd5e48
+     internal_properties : CAAAAAgAAACloY2RLkvj/EjqUUQQ8MzAMV50ZNeBdZK4pkoXQ90xN9lbMyuHeQAeHQ6IcDCgWEiwsA==
+     physical_name : .\WinDevMessageBox.WDW
+     type : 2
+   -
+     name : WinDevDialogBox
+     identifier : 0x49392a4b00c56751
+     internal_properties : CAAAAAgAAABZNQEFop+XmKQGTVI85K0pZzRy2tZaTc61NN8LAjdnoau1nllpX+wKCTqkHOQc5NQ8xA==
+     physical_name : .\WinDevDialogBox.WDW
+     type : 2
+  other_elements : []
+  net_assemblies : []
+  uwp_api : []
+  external_components : []
+  internal_components : []
+ report_and_queries_enabled : false
+ common_generation_directory : true
+ languages :
+  - en-GB
+ wd_style_sheet : .\WD Multiple Clipboard.sty
+ wb_style_sheet : .\WD Multiple Clipboard.wws
+ code_elements :
+  internal_properties : CAAAAAgAAABseimUYz4VdXZ8hGsGFqoxLDfDcHkNZdBf0iQg2FQcqmw5VrO2lryVMt3efm9RagPlXJBReauIsX3ZdB8=
+  type_code : 0
+  p_codes :
+   -
+     code : |1-
+      CONSTANT
+      	ID_SHORTCUT_MULTIPLE_PASTE = 1000
+      	PREVIEW_TEXT = 1
+      	PREVIEW_IMAGE = 2
+      	CLASS_WINDOW_WINDEV = "WinDevObject"
+      END
+      
+      // Structure containing the format of a clipboard element
+      ST_ELEM_CLIPBOARD_FORMAT is Structure
+      	nFormat is int
+      	sFormatName is string
+      	nSize is int
+      	bufContent is buffer	
+      END
+      
+      // Structure containing a clipboard element (all formats)
+      ST_ELEM_CLIPBOARD is Structure
+      	arrElemFormat is array of ST_ELEM_CLIPBOARD_FORMAT
+      	bufPreview is buffer
+      	nPreviewType is int
+      END
+      
+      // Array of clipboard elements
+      garrClipboardElem is array of ST_ELEM_CLIPBOARD
+      
+      // Deserialize the clipboard
+      gsBackupDir is string = fDataDirUser()+["\"]+<§@00000000000000000000§>
+      gsBackupFile is string = gsBackupDir+<§@00000000000000000001§>
+      IF fFileExist(gsBackupFile) THEN
+      	WHEN EXCEPTION IN
+      		LOCAL
+      			bufBackup is buffer = RepeatString(Charact(0),fSize(gsBackupFile))
+      			nFil is int = fOpen(gsBackupFile,foRead)
+      		fRead(nFil,fSize(gsBackupFile),&bufBackup)
+      		fClose(nFil)
+      		Deserialize(garrClipboardElem,bufBackup,psdBinary)
+      	DO
+      		fDelete(gsBackupFile)
+      	END
+      END
+     type : 196608
+   -
+     code : |1-
+      
+      IF fMakeDir(gsBackupDir) THEN
+      	bufBackup is buffer
+      	Serialize(garrClipboardElem,bufBackup,psdBinary)
+      	nFil is int = fCreate(gsBackupFile)
+      	IF nFil>0 THEN
+      		nSize is int = Length(bufBackup)
+      		fWrite(nFil,&bufBackup,nSize)
+      		fClose(nFil)
+      	END
+      END
+     type : 196610
+   -
+     type : 196621
+   -
+     type : 196627
+     enabled : false
+  orphans :
+   -
+     name : WD Multiple Clipboard
+     identifier : 0x4c7fb0d100035520
+     code_elements :
+      type_code : 159
+      p_codes : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+rad :
+ internal_properties : CAAAAAgAAABhIL0UXeZmxDJxY3Xy0Q==
+project_explorer :
+ explorer_type : project
+resources :
+ string_res :
+  identifier : 0x0
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      en-GB : WD Multiple Clipboard
+     index : 0
+   -
+     text :
+      en-GB : \Clipboard.bin
+     index : 1
+custom_note :
+ internal_properties : CAAAAAgAAAAd98VSJfHHqE3P0QHwrwdhn7ig8dWBR6valpUTgnAMTVXiDg==

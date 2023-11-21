@@ -1,0 +1,98 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : pMemoryAPI
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x1c7fc6350035e650
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  type_code : 31
+  p_codes :
+   -
+     code : |1-
+      
+     type : 720896
+  procedures :
+   -
+     name : GlobalLock
+     procedure_id : 2053578036367224240
+     type_code : 14
+     code : |1+
+      // Summary: Transforms a global handle object into a pointer in the memory zone of process
+      // Parameters:
+      //	nHandle (system int): handle of the global object
+      //	nSize (int): size of the memory zone obtained (output parameter)
+      // Return value:
+      // 	variant: pointer to the memory zone
+      //
+      Procedure GlobalLock( nHandle is system int , nSize is int )
+      
+      nSize = API(KERNELDLL,"GlobalSize",nHandle)
+      RESULT API(KERNELDLL,"GlobalLock",nHandle)
+      
+     type : 458752
+   -
+     name : GlobalUnlock
+     procedure_id : 2053578057842130772
+     type_code : 14
+     code : |1-
+      // Summary: free a global object handle from the process memory
+      // Parameters:
+      //	nHandle (system int): handle of the global object
+      // Return value:
+      // 	int: 0 if the object 
+      //
+      Procedure GlobalUnlock( nHandle is system int )
+      
+      RESULT API(KERNELDLL,"GlobalUnlock",nHandle)
+     type : 458752
+   -
+     name : GlobalAlloc
+     internal_properties : CAAAAAgAAABAYqROEGwWeZtsAMhfiK+jcGjj5lbh5+UNDPpnr7FcAGxhXdpSlcff+4lPSEWq6PLZRFQ9W/C18wb87/pN4Ig6p6mFAVSBiM0pQspCgL+zyQs9dGQXFp5uXa5XIFuiS2G+wEiufl9WPteupyMKxHRAmLOgQ5SFmfNNltcwa/HOJnPoqWXxmBCq5TZqSYDWJjqd4RDNZQ==
+     procedure_id : 2053937284621515495
+     type_code : 15
+     code : |1+
+      // Summary: allocate a global memory block
+      // Parameters:
+      //	nFlag (int): Flags
+      //	nSize (integer): size to allocate
+      // Return value:
+      // 	variant: handle on the allocated memory zone, NULL in case of an error
+      //
+      Procedure GlobalAlloc( nFlag is int , nSize is 4-byte int )
+      
+      RESULT API(KERNELDLL,"GlobalAlloc",nFlag,nSize)
+      
+     type : 458752
+   -
+     name : GlobalFree
+     procedure_id : 2053940419947716012
+     type_code : 15
+     code : |1+
+      // Summary: free a global memory zone
+      // Parameters:
+      //	nHMem (system integer): handle of the zone to free
+      // Return value:
+      // 	NULL if the freeing was successful
+      //
+      Procedure GlobalFree( nHMem is system int )
+      
+      RESULT API(KERNELDLL,"GlobalFree",nHMem)
+      
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_ProcéduresGlobales1
+resources :
+ string_res :
+  identifier : 0x1006a11231dd5b75
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ
